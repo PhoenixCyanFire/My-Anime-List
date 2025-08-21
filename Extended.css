@@ -280,7 +280,7 @@ body[data-owner="1"] #fancybox-frame { filter: none; }
   padding:0;
   background:var(--bg);
   border-radius:50%;
-  color:#00FFFB!important;
+  color:#ff65ad!important;
   font-size:0!important;
   line-height:26px;
   box-shadow:0 1px 2px rgba(0,0,0,.2)
