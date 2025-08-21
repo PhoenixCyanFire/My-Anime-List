@@ -1,0 +1,472 @@
+/*-------------------------------*\
+|   CUSTOM SCROLLBAR    |
+\*------------------------------*/
+
+/* Firefox */
+* {
+	scrollbar-color: var(--text) var(--bg);
+}
+
+/* Chrome */
+
+*::-webkit-scrollbar {
+	background: var(--bg);
+}
+
+*::-webkit-scrollbar-button:vertical {
+	background: transparent center / 10px auto no-repeat;
+} *::-webkit-scrollbar-button:vertical:start {
+	background-image: url(https://i.imgur.com/Cu2u9Hu.png);
+} *::-webkit-scrollbar-button:vertical:end {
+	background-image: url(https://i.imgur.com/0YI7VxA.png);
+} *::-webkit-scrollbar-button:horizontal {
+	background: transparent center / auto 10px no-repeat;
+} *::-webkit-scrollbar-button:horizontal:start {
+	background-image: url(https://i.imgur.com/BArw1oI.png);
+} *::-webkit-scrollbar-button:horizontal:end {
+	background-image: url(https://i.imgur.com/vqOtoms.png);
+}
+
+*::-webkit-scrollbar-corner {
+	background: var(--bg);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--text) content-box;
+  border: 3px solid transparent;
+  border-radius: 10px;
+  background-clip: content-box; 
+}
+*::-webkit-scrollbar-thumb:vertical {
+	border-width: 0 1px transparent;
+} *::-webkit-scrollbar-thumb:horizontal {
+	border-width: 2px 0 transparent;
+} *::-webkit-scrollbar-thumb:hover {
+	background-color: var(--text-dim);
+} 
+
+*::-webkit-scrollbar-track {
+	width: 5px;
+}
+/*------------------------E-N-D-*/
+
+/*-S-T-A-R-T--------------------*\
+| Tag Desc Basis Vertical R1.2   |
+\*------------------------------*/
+
+.data.tags span a{position:relative}
+.data.tags span a:after,
+.data.tags span a:not([href*="=Loved%20it!"]):not([href*="=Enjoyed%20it1"]):before {
+  position:absolute;
+  z-index:5;
+  display:block;
+  transition:all .15s ease;
+  pointer-events:none;
+  opacity:0
+}
+.data.tags span a:after 
+{
+  top:50%;
+  left:-215px;
+  width:200px;
+  height:auto;
+  padding:4px 8px;
+  background:var(--btn-bg);
+  border:1px solid var(--text-dim);
+  border-radius:4px;
+  box-sizing:border-box;
+  color:var(--text);
+  font:11px/15px Arial,Verdana;
+  text-align:left;
+  white-space:pre-wrap;
+  transform:translateY(-50%)
+}
+.data.tags span a:not([href*="=Loved%20it!"]):not([href*="=Enjoyed%20it1"]):before
+{
+  content:"";
+  top:calc(50% - 5px);
+  left:-15px;
+  border-width:5px;
+  border-style:solid;
+  border-color:transparent transparent transparent var(--text-dim)
+}
+.data.tags span a:hover::after
+{
+  left:-210px;
+  opacity:1
+}
+.data.tags span a:not([href*="=Loved%20it!"]):not([href*="=Enjoyed%20it!"]):hover:before
+{
+  left:-10px;
+  opacity:1
+}
+
+/*-----------------------------------*\
+https://myanimelist.net/forum/?topicid=1723114
+  "\a" = New Line(enter)
+\*-----------------------------------*/
+
+/* TAG - Rewatched */   
+.data.tags span a[href*="=Rewatched"]:after {
+	content: "I Have ReWatched This Anime."
+}
+/*  TAG - Loved it! */    
+.anime .data.tags span a[href*="=Loved%20it!"]:after {
+	content: "The Heart Icon Is To Show That I Really Really Enjoyed This Anime."
+}
+/*  TAG - Re Times */  
+.data.tags span a[href*="=x"]:after {
+	content: "The Date Is In (DD/MM/YY) format."
+}
+/*  TAG - Most Fav Ever */  
+.anime .data.tags span a[href*="=Most%20Fav"]:after {
+  content: "This Is One Of My Most Fav Animes Ever !"
+}
+/*  TAG - Best Girl!! */  
+.anime .data.tags span a[href*="Best%20Girl"]:after {
+  content: "What's wrong with calling the best girl a BEST GIRL?!"
+}
+/*  TAG - Worst Anime Ever! */  
+.anime .data.tags span a[href*="=Worst%20Anime%20Ever!"]:after {
+  content: "I wish I could Un-See everything I just saw :("
+}
+/*-----TAG - Seasons-----*/  
+/* Winter 2021*/ 
+.data.tags span a[href*="=Winter%202021"]:after { content: "Animes I watched on a weekly basis in Winter 2021" }
+/* Spring 2021*/ 
+.data.tags span a[href*="=Spring%202021"]:after { content: "Animes I watched on a weekly basis in Spring 2021" }
+/* Summer 2021*/ 
+.data.tags span a[href*="=Summer%202021"]:after { content: "Animes I watched on a weekly basis in Summer 2021" }
+/* Fall 2021*/ 
+.data.tags span a[href*="=Fall%202021"]:after { content: "Animes I watched on a weekly basis in Fall 2021" }
+
+/* Winter 2022*/ 
+.data.tags span a[href*="=Winter%202022"]:after { content: "Animes I watched on a weekly basis in Winter 2022" }
+/* Spring 2022*/ 
+.data.tags span a[href*="=Spring%202022"]:after { content: "Animes I watched on a weekly basis in Spring 2022" }
+/* Summer 2022*/ 
+.data.tags span a[href*="=Summer%202022"]:after { content: "Animes I watched on a weekly basis in Summer 2022" }
+/* Fall 2022*/ 
+.data.tags span a[href*="=Fall%202022"]:after { content: "Animes I watched on a weekly basis in Fall 2022" }
+
+/* Winter 2023*/ 
+.data.tags span a[href*="=Winter%202023"]:after { content: "Animes I watched on a weekly basis in Winter 2023" }
+/* Spring 2023*/ 
+.data.tags span a[href*="=Spring%202023"]:after { content: "Animes I watched on a weekly basis in Spring 2023" }
+/* Summer 2023*/ 
+.data.tags span a[href*="=Summer%202023"]:after { content: "Animes I watched on a weekly basis in Summer 2023" }
+/* Fall 2023*/ 
+.data.tags span a[href*="=Fall%202023"]:after { content: "Animes I watched on a weekly basis in Fall 2023" }
+
+/* Winter 2024*/ 
+.data.tags span a[href*="=Winter%202024"]:after { content: "Animes I watched on a weekly basis in Winter 2024" }
+/* Spring 2024*/ 
+.data.tags span a[href*="=Spring%202024"]:after { content: "Animes I watched on a weekly basis in Spring 2024" }
+/* Summer 2024*/ 
+.data.tags span a[href*="=Summer%202024"]:after { content: "Animes I watched on a weekly basis in Summer 2024" }
+/* Fall 2024*/ 
+.data.tags span a[href*="=Fall%202024"]:after { content: "Animes I watched on a weekly basis in Fall 2024" }
+
+/* Winter 2025*/ 
+.data.tags span a[href*="=Winter%202025"]:after { content: "Animes I watched on a weekly basis in Winter 2025" }
+/* Spring 2025*/ 
+.data.tags span a[href*="=Spring%202025"]:after { content: "Animes I watched on a weekly basis in Spring 2025" }
+/* Summer 2025*/ 
+.data.tags span a[href*="=Summer%202025"]:after { content: "Animes I watched on a weekly basis in Summer 2025" }
+/* Fall 2025*/ 
+.data.tags span a[href*="=Fall%202025"]:after { content: "Animes I watched on a weekly basis in Fall 2025" }
+
+/*------------------------E-N-D-*/
+
+/*-------------------------------*\
+|      Horizontal Rating         |
+\*-------------------------------*/
+body.ownlist.anime .data.rated {
+	position: absolute;
+	margin-left: 100px;
+	top: 4px;
+	z-index: 5;
+	display: -webkit-flex !important;
+	display: -moz-flex !important;
+	display: flex !important;
+	padding: 0 !important;
+	color: var(--text-dim);
+	width: auto;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	align-items: center;
+}
+.data.rated:before {
+	content: "-"; 
+	margin-top: -3px;
+	padding-right: 5px;
+	color: var(--text);
+}
+.data.rated:empty:before {
+    content: "---" !important;
+}
+/*===============================*/
+
+/*-------------------------------*\
+|      Horizontal Studio         |
+\*-------------------------------*/
+
+body.ownlist.anime .list-table-data {
+	padding-top: 0px;
+}
+
+body.ownlist.anime .data.studio {
+	position: absolute;
+	margin-left: 150px;
+	top: -26px;
+	z-index: 5;
+	display: -webkit-flex !important;
+	display: -moz-flex !important;
+	display: flex !important;
+	width: 0;
+	height: 100%;
+	padding: 0 !important;
+	
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	align-items: center;
+}
+.data.studio div {
+	max-width: 980px;
+	margin: 0 0 4px 80px;
+	
+	white-space: nowrap;
+}
+.data.studio span {
+	display: inline-block;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	align-items: center;
+	padding: 0;
+}
+body.ownlist.anime .list-table .list-table-data .data.studio span a {
+	padding: 0px 7px !important;
+	margin-right: 4px;
+	font-size: 10px !important;
+	white-space: nowrap;
+	color: var(--text-dim) !important;
+	background: none;
+	align-items: center;
+}
+/*===============================*/
+body.ownlist.anime .list-table .list-table-data 
+.data.studio span a:hover, 
+.data.studio a:hover {
+	background: white !important;
+	color: black !important;
+	font-weight: bold !important;
+}
+.data.studio:before {content: "-";}
+.data.studio > span:nth-child(2) a:before {
+  content: "|    "; 
+  font-weight: bold; 
+  margin-left: -13px;
+}
+.data.studio > span:nth-child(3) a:before {
+  content: "|    "; 
+  font-weight: bold; 
+  margin-left: -13px;
+}
+/*===============================*/
+body.ownlist.anime .list-table .list-table-data .data.studio a{
+	color: #00fbffcc !important;
+  line-height: 15px;
+  font-size: 11px !important;
+}
+body.ownlist.anime .data.studio a.edit { right: -1060px; }
+body.ownlist.anime .data.studio textarea { right: -1060px; }
+
+.data.studio:empty:before {
+    content: "-  Unknown Studio" !important;
+}
+/*===============================*/
+
+
+
+.list-table-data .data.title {top: -5px; }
+
+/*-------------------------------*\
+|      Horizontal Genres          |
+\*-------------------------------*/
+
+body.ownlist .list-table-data {
+	padding-bottom: 2px;
+}
+
+body.ownlist .data.genre {
+	position: absolute;
+	margin-left: 82px;
+	bottom: 2px;
+	z-index: 5;
+	display: flex !important;
+	width: 0;
+	height: auto;
+	padding: 0 !important;
+	
+}
+.data.genre > {
+	max-width: 980px;
+	margin: 0 0 4px 80px;
+	
+	font-size: 0;
+	white-space: nowrap;
+}
+.data.genre span {
+	display: inline-flex;
+	
+	padding: 0;
+}
+body.ownlist .list-table .list-table-data .data.genre span a {
+	margin-left: -1px;
+	white-space: nowrap;
+	background: var(--btn-bg);
+  padding: 1px 4px;
+  border-radius: 20px;
+  font-size: 9px !important;
+  /* font-weight: bold; */
+  font-style: italic;
+}
+/*===============================*/
+body.ownlist .list-table .list-table-data .data.genre span a:hover, 
+.data.genre a:hover {
+	background: white !important;
+	color: black !important;
+	font-weight: bold !important;
+  transition: all .3s ease !important;
+}
+.data.genre:before {content: "";}
+/*===============================*/
+
+body.ownlist .list-table .list-table-data .data.genre a{
+	color: #00fbffcc !important;
+  line-height: 15px;
+  font-size: 11px !important;
+}
+body.ownlist .data.genre a.edit { right: -1060px; }
+body.ownlist .data.genre textarea { right: -1060px; }
+/*===============================*/
+
+
+/*------------------------------*\
+|  Anime/Manga-Score    |
+\*------------------------------*/
+td.data.mal_score {
+    position: absolute;
+    padding: 4px 4px 4px 4px !important;
+    background: black;
+    margin: 52px 0 0 23px;
+    border-radius: 140px 140px 40px 40px;
+	width: 25px;
+  	z-index: 5;
+}
+/*------------------------------*\
+|  Anime/Manga-Synopsis    |
+\*------------------------------*/
+.list-table .list-table-data:hover .data.title .link:before{
+	background-position: top right;
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: fixed;
+  	color: var(--text);
+	text-shadow: none !important;
+  	right: 0.5%;
+	width: 40%;
+	height: auto;
+  top: 0.5%;
+	white-space: pre-wrap;
+	overflow: auto;
+  font-family: arial !important;
+	font-size: 12px;
+	border: var(--text) 2px groove;
+	border-radius: 20px;
+	padding: 1%;
+	background-color: var(--bg);
+	opacity: 0.9;
+	z-index:100;
+	transition: all .3s ease-in-out !important;
+}
+.list-table .list-table-data:hover .data.title .link:hover{z-index:101;}
+
+/* Data Type Mod */
+.data.type {
+    top: -25px;
+}
+
+/* Premiered Season Mod */
+div.list-unit:not(.plantowatch) .data.season {
+    margin-left: -100px;
+    visibility: hidden;
+}
+div.list-unit.plantowatch  .data.season {
+  margin-left: -15px;
+}
+
+/* PTW & PTR Airing Dates Mod*/
+div.list-unit:not(.plantowatch):not(.plantoread) .data.airing-finished {
+    margin-left: -100px;
+    visibility: hidden;
+}
+div.list-unit:not(.plantowatch):not(.plantoread) .data.airing-started {
+    margin-left: -100px;
+    visibility: hidden;
+}
+
+div.list-unit.plantoread .data.started,
+div.list-unit.plantowatch .data.started {
+  visibility: hidden;
+  margin-left: -220px;
+}
+div.list-unit.plantoread .data.finished,
+div.list-unit.plantowatch .data.finished {
+  visibility: hidden;
+}
+div.list-unit.plantoread .data.days,
+div.list-unit.plantowatch .data.days {
+  visibility: hidden;
+}
+
+/* Expand title on Hover*/
+.data.title a.link.sort:hover {
+    overflow: auto !important;
+    text-overflow: initial;
+}
+.data.title a.link.sort::-webkit-scrollbar-thumb:horizontal { 
+  border-width: 5px
+}
+
+/* Content Status (NYA / Airing) */
+.plantowatch span.content-status {
+    color: cyan !important;
+    font-style: italic;
+}
+.content-status:before{content:"『 "  !important}
+.content-status:after{content:"』 - " !important}
+
+/* Smooth Scroll */
+html { scroll-behavior: smooth; }
+
+/* List Hover Circle */
+.list-table-data:hover {
+    background: url(https://i.ibb.co/8jsXnf4/Hover-Circle-Neon-Cyan.gif) no-repeat;
+    background-position: -2px;
+    background-size: 85px;
+}
+
+/* Anime+ Stats */
+.list-stats:before {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 153px;
+    top: 30px;
+    left: 216px;
+    background: url(https://anime.plus/jery_js/WzMsIjk3YjBjZCIsIjAwY2RjMCIsIjg4MTA4OSIsIjcwNzA3MCIsIjAwMDAwMCIsIjIzZmZmYSIsImZmNGVkZiIsIjU3N2ZjMiIsIjU3N2ZjMiJd/1643273856) no-repeat;
+    z-index: 10;
+    background-size: contain;
+    border: darkcyan 2px groove;
+}
