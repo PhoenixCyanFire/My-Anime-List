@@ -352,8 +352,8 @@ https://myanimelist.net/forum/?topicid=1723114
 .data.tags span a[href*="=Rewatched"]:after {
 	content: "I Have ReWatched This Anime."
 }
-/*  TAG - Loved it! */    
-.anime .data.tags span a[href*="=Loved%20it!"]:after {
+/*  TAG - Favourite */    
+.anime .data.tags span a[href*="=Favourite"]:after {
 	content: "The Heart Icon Is To Show That This Is One Of My Favourite Anime's"
 }
 /*  TAG - Re Times */  
