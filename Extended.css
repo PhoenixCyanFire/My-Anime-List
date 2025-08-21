@@ -681,3 +681,8 @@ html { scroll-behavior: smooth; }
     background-size: contain;
     border: darkcyan 2px groove;
 }
+
+/* All Anime Category Header Spacing Fix */
+.anime[data-query='"status":7']:not([data-query='order']):not([data-query='tag"']):not([data-query='"s"']) .list-item:nth-child(2) {
+    margin-top: 58px !important;
+}
