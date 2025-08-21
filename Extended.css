@@ -682,7 +682,7 @@ html { scroll-behavior: smooth; }
     border: darkcyan 2px groove;
 }
 
-/* All Anime Category Header Spacing Fix */
-.anime[data-query*='"status":7']:not([data-query*='order']):not([data-query*='tag"']):not([data-query*='"s"']) .list-item:nth-child(2) {
+/* All Anime/Manga Category Header Spacing Fix */
+[data-query*='"status":7']:not([data-query*='order']):not([data-query*='tag"']):not([data-query*='"s"']) .list-item:nth-child(2) {
     margin-top: 58px !important;
 }
