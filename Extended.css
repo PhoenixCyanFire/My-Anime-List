@@ -105,9 +105,9 @@ td.data.public-score a {
 \*------------------------------*/
 .list-table>tbody:first-of-type {
     position: relative;
-    top: 10px;
+    top: 125px;
     margin-top: -38px;
-    left: 48%;
+    left: 95%;
     display: inline-block;
     width: 35px;
     height: 25px;
