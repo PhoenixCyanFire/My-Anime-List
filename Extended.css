@@ -268,12 +268,37 @@ body[data-owner="1"] #fancybox-frame { filter: none; }
 /*------------------------E-N-D-*/
 
 /*-S-T-A-R-T--------------------*\
+| Favourite Hearts (Left) R0.4   |
+\*------------------------------*/
+.data.tags span{padding:0}.data.tags span a{margin:1px 0}.data.tags span a[href*="=Favourite"],
+.data.tags span a[href*="=Favorite"]{
+  position:absolute;
+  right:-28px;
+  top:calc(50% - 13px);
+  width:26px;
+  height:26px;
+  padding:0;
+  background:var(--bg);
+  border-radius:50%;
+  color:#00FFFB!important;
+  font-size:0!important;
+  line-height:26px;
+  box-shadow:0 1px 2px rgba(0,0,0,.2)
+}
+.data.tags span a[href*="=Favourite"]:before,
+.data.tags span a[href*="=Favorite"]:before {
+  content:"❤";
+  font-size:18px;
+}
+/*------------------------E-N-D-*/
+
+/*-S-T-A-R-T--------------------*\
 | Tag Desc Basis Vertical R1.2   |
 \*------------------------------*/
 
 .data.tags span a{position:relative}
 .data.tags span a:after,
-.data.tags span a:not([href*="=Loved%20it!"]):not([href*="=Enjoyed%20it1"]):before {
+.data.tags span a:not([href*="=Favourite"]):not([href*="=Favorite"]):before {
   position:absolute;
   z-index:5;
   display:block;
@@ -298,7 +323,7 @@ body[data-owner="1"] #fancybox-frame { filter: none; }
   white-space:pre-wrap;
   transform:translateY(-50%)
 }
-.data.tags span a:not([href*="=Loved%20it!"]):not([href*="=Enjoyed%20it1"]):before
+.data.tags span a:not([href*="=Favourite"]):not([href*="=Favorite"]):before
 {
   content:"";
   top:calc(50% - 5px);
@@ -312,7 +337,7 @@ body[data-owner="1"] #fancybox-frame { filter: none; }
   left:-210px;
   opacity:1
 }
-.data.tags span a:not([href*="=Loved%20it!"]):not([href*="=Enjoyed%20it!"]):hover:before
+.data.tags span a:not([href*="=Favourite"]):not([href*="=Favorite"]):hover:before
 {
   left:-10px;
   opacity:1
@@ -329,7 +354,7 @@ https://myanimelist.net/forum/?topicid=1723114
 }
 /*  TAG - Loved it! */    
 .anime .data.tags span a[href*="=Loved%20it!"]:after {
-	content: "The Heart Icon Is To Show That I Really Really Enjoyed This Anime."
+	content: "The Heart Icon Is To Show That This Is One Of My Favourite Anime's"
 }
 /*  TAG - Re Times */  
 .data.tags span a[href*="=x"]:after {
