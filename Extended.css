@@ -684,5 +684,5 @@ html { scroll-behavior: smooth; }
 
 /* All Anime/Manga Category Header Spacing Fix */
 [data-query*='"status":7']:not([data-query*='order']):not([data-query*='tag"']):not([data-query*='"s"']) .list-item:nth-child(2) {
-    margin-top: 58px !important;
+    margin-top: 40px !important;
 }
