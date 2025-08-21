@@ -1,3 +1,219 @@
+/*-T-I-N-Y--T-W-E-A-K-S-----------*\
+| _______________________________  |
+\*-------------------------------*/
+
+/*------------------------------*\
+|  Hover Image    |
+\*------------------------------*/
+.data.image a:before{  
+    background: contain !important;
+    height: 270px !important;
+    width: 190px !important;
+    top: -150% !important;
+    left: -207px;
+}
+/*------------------------------*\
+|  Title Length    |
+\*------------------------------*/
+body.ownlist.anime .list-table .list-table-data .data.title {
+    position: relative;
+    width: 180px;
+    height: 25px;
+    order: 12;
+    line-height: 16px;
+    flex: 1 0 auto;
+    padding: 32px 0px 0px 8px !important;
+}
+/*------------------------------*\
+|   Progress    |
+\*------------------------------*/
+body.ownlist.anime .data.progress {
+    width: 120px;
+}
+/*------------------------------*\
+|   Chapter & Volume    |
+\*------------------------------*/
+td.data.chapter {
+    margin-top: -23px; 
+    white-space: nowrap;
+    overflow-x: visible;
+}
+td.data.volume {
+    margin-top: 40px;
+}
+/*------------------------------*\
+|   Score    |
+\*------------------------------*/
+body.ownlist.manga .data.score {
+    margin-right: 20px;
+}
+.data.mal_score::before {
+    content: "";
+}
+/*------------------------------*\
+|   Tags    |
+\*------------------------------*/
+body.ownlist.manga .list-table .list-table-data .data.tags {
+    margin-left: 5px;
+}
+/*------------------------------*\
+|   Edit/More Buttons    |
+\*------------------------------*/
+.list-table .list-table-data .data.title a {
+ color:  !important;
+ font-size: 11px;
+}
+/*------------------------------*\
+|   Switch List Btn    |
+\*------------------------------*/
+#header-menu-dropdown a.icon-menu.anime-list:hover,
+#header-menu-dropdown a.icon-menu.manga-list:hover {
+    min-width: 180px;
+}
+#header-menu-dropdown a.icon-menu.anime-list span:before,
+#header-menu-dropdown a.icon-menu.manga-list span:before{
+    content: "View Jery's ";
+}
+.list-menu-float a.icon-menu.anime-list:hover,
+.list-menu-float a.icon-menu.manga-list:hover{
+  min-width: 140px;
+}
+.list-menu-float a.icon-menu.anime-list span.text:before,
+.list-menu-float a.icon-menu.manga-list span.text:before{
+    content: "Your ";
+}
+/*------------------------------*\
+|  List Tools btn (UserScript)   |
+\*------------------------------*/
+a.icon-menu:last-child {
+    z-index: -999;
+}
+/*------------------------------*\
+|   Global Scores {UserScript}    |
+\*------------------------------*/
+td.data.public-score a {
+	position: absolute;
+	padding: 4px 4px 4px 4px !important;
+	background: black;
+	margin: 14px 0 0 23px;
+    	border-radius: 140px 140px 40px 40px;
+	width: 25px;
+	z-index: 10;
+}
+/*------------------------------*\
+|   Quick Sort Button   |
+\*------------------------------*/
+.list-table>tbody:first-of-type {
+    position: relative;
+    top: 10px;
+    margin-top: -38px;
+    left: 48%;
+    display: inline-block;
+    width: 35px;
+    height: 25px;
+    background: 0 0!important;
+    z-index: 39;
+}
+.list-table>tbody:first-of-type:after {
+  content: "\f0dc  Sort" !important;
+  width: 50px !important;
+  font-family: 'FontAwesome 4' !important;
+}
+.list-table-header { 
+  right: 35px !important; 
+}
+
+/*------------------------------*\
+|   Colored Tags  |
+\*------------------------------*/
+.data.tags span a[href*="=Rewatched"], .data.tags span a[href*="=Reread"] { background: #0f1c5f; 
+border-bottom-left-radius: 0px;
+border-bottom-right-radius: 0px;
+}
+.data.tags span a[href*="=x"] { background: #0f1c5f;
+border-top-left-radius: 0px;
+border-top-right-radius: 0px;
+margin-top: -4px;
+}
+
+.data.tags span a[href*="=Winter"] { background: #00172b;}
+.data.tags span a[href*="=Spring"] { background: #310029;}
+.data.tags span a[href*="=Summer"] { background: #310000;}
+.data.tags span a[href*="=Fall"] { background: #273100;}
+
+/*------------------------------*\
+|   Copyright  |
+\*------------------------------*/
+div#footer-block {
+    margin-top: 0 !important; 
+}
+#copyright:after {
+    content: "\a Be Sure To Recommend Me an Anime Once u Finish Checking Out My List 😁";
+    white-space: pre;
+}
+
+/*------------------------------*\
+| MAL-Sync - Next Ep {UserScript} |
+\*------------------------------*/
+a.nextStream, 
+a.resumeStream {
+    margin: 0 -5px 0 0 !important;
+}
+
+/*-------------------------------*\
+| Rewatched List Btn {UserScript} |
+\*------------------------------*/
+span.stats a#rewatchedlistbtn {
+    width: 60px !important;
+}
+body.ownlist.anime span.stats a#rewatchedlistbtn:hover {
+    width: 163px !important;
+}
+
+/*-S-T-A-R-T--------------------*\
+| Custom Cursor         |
+\*------------------------------*/
+
+/*Lower the size under 32px wide and high if its too large.
+https://myanimelist.net/forum/?topicid=1903808
+*/
+
+body *, :not(*) {
+cursor: url(https://i.ibb.co/0sZVdWB/ezgif-4-5b45f690d776.png), auto !important;
+}
+
+a:hover,
+.data.tags span a,
+.data.tags span a:hover,
+.fa:hover,.data.progress span:hover,.list-table .list-table-data .data.score:hover,
+.list-table .list-table-data .data.licensor a:hover,.list-table .list-table-data .data.score .link:before,
+.data.progress span a:before,.list-table .list-table-data .data.season a:hover,.list-item .data.studio:hover *,
+.list-table .list-table-data .data.title .link:hover,.list-table-data .data.tags:hover,.list-table .list-table-data .tags .edit:hover,
+.list-table .list-table-data .data.title .edit:hover a,.list-table .list-table-data .data.title .add:hover a{
+
+cursor: url(https://i.ibb.co/bWpV7x6/cursor.png), auto !important;
+}
+
+/*------------------------------*\
+| List colors       |
+status menu container is the color of the header under the banner when there is transparency on your tables, and the last codes control the rows on hover and the glow around them. Make a new box shadow here
+https://html-css-js.com/css/generator/box-shadow/
+\*------------------------------*/
+
+.status-menu-container{
+background: ; 
+}
+
+.list-table-data:hover{
+background: ; 
+box-shadow: -webkit-box-shadow: 0px 0px 7px 10px rgba(33,255,209,0.42); 
+box-shadow: 0px 0px 7px 10px rgba(33,255,209,0.42);;
+
+}
+/* ====================
+Dark Mode Filter Fix */
+body[data-owner="1"] #fancybox-frame { filter: none; }
+
 /*-------------------------------*\
 |   CUSTOM SCROLLBAR    |
 \*------------------------------*/
