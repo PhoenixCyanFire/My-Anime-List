@@ -172,65 +172,6 @@ body.ownlist.anime span.stats a#rewatchedlistbtn:hover {
 
 /*------------------------------*\
 | List colors       |
-pbg is the color of the wallpaper when you have no image there
-
-bg is the color of the tables and rows
-
-text is the color of your anime
-titles and some text on your rows (numbers, score, information, tags)
-
-text-dim is other text on your rows (edit, more, non-links, Progress:, Rated:, etc)
-
-btn-bg is the button color around score and tags
-
-text-head is the category links unselected
-
-text-head-h is the current category link selected
-
-btn-head-bg-h is buttons under the header when selected
-
-btn-text-h is that button text
-
-banner-text is the banner text color, and its shadow color is under that
-
-checkmark - 
-
-Get a new HTML/Hex color number here, or use color names.
-https://htmlcolorcodes.com/
-
-Get new RGBA colors here for the rows
-https://cssgenerator.org/rgba-and-hex-color-generator.html
-\*------------------------------*/
-:root {
-
-    --off-btn: #444;
-    --pbg: #161616;
-    --bg: #212121;
-    --bg-dark: #444;
-    --text: cyan; /* #00FFFB */
-    --text-h: #fffafa;
-    --text-dim: darkcyan; /* #00B2B5 */
-    --text-dim-h: #fffafa;
-    --text-dark: #ababab;
-    --shadow: rgba(0,0,0,0.8);
-    --icon: #959595;
-    --accent: #008BFF;
-    --banner-text: #f6f5ff;
-    --banner-text-shadow: #0008ff;
-    --btn-bg: #000000;
-    --btn-bg-h: #fffafa;
-    --btn-head-bg-h: cyan;
-    --btn-text-h: #212121;
-    --text-head: cyan;
-    --text-head-h: #00F7FF;
-    --cover-bg: #090909;
-    --edit-btn: #FF0101;
-    --checkmark: #008BFF;
-}
-
-
-/*------------------------------*\
-| List colors       |
 status menu container is the color of the header under the banner when there is transparency on your tables, and the last codes control the rows on hover and the glow around them. Make a new box shadow here
 https://html-css-js.com/css/generator/box-shadow/
 \*------------------------------*/
@@ -270,22 +211,6 @@ a:hover,
 cursor: url(https://i.ibb.co/bWpV7x6/cursor.png), auto !important;
 }
 
-/*------------------------------*\
-| List colors       |
-status menu container is the color of the header under the banner when there is transparency on your tables, and the last codes control the rows on hover and the glow around them. Make a new box shadow here
-https://html-css-js.com/css/generator/box-shadow/
-\*------------------------------*/
-
-.status-menu-container{
-background: ; 
-}
-
-.list-table-data:hover{
-background: ; 
-box-shadow: -webkit-box-shadow: 0px 0px 7px 10px rgba(33,255,209,0.42); 
-box-shadow: 0px 0px 7px 10px rgba(33,255,209,0.42);;
-
-}
 /* ====================
 Dark Mode Filter Fix */
 body[data-owner="1"] #fancybox-frame { filter: none; }
