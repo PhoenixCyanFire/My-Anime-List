@@ -270,8 +270,8 @@ body[data-owner="1"] #fancybox-frame { filter: none; }
 /*-S-T-A-R-T--------------------*\
 | Favourite Hearts (Left) R0.4   |
 \*------------------------------*/
-.data.tags span{padding:0}.data.tags span a{margin:1px 0}.data.tags span a[href*="=Favourite"],
-.data.tags span a[href*="=Favorite"]{
+.data.tags span{padding:0}.data.tags span a{margin:1px 0}.data.tags span a[href*="=Loved%20it!"],
+.data.tags span a[href*="=Enjoyed%20it"]{
   position:absolute;
   right:-28px;
   top:calc(50% - 13px);
@@ -285,8 +285,8 @@ body[data-owner="1"] #fancybox-frame { filter: none; }
   line-height:26px;
   box-shadow:0 1px 2px rgba(0,0,0,.2)
 }
-.data.tags span a[href*="=Favourite"]:before,
-.data.tags span a[href*="=Favorite"]:before {
+.data.tags span a[href*="=Loved%20it!"]:before,
+.data.tags span a[href*="=Enjoyed%20it"]:before {
   content:"❤";
   font-size:18px;
 }
@@ -298,7 +298,7 @@ body[data-owner="1"] #fancybox-frame { filter: none; }
 
 .data.tags span a{position:relative}
 .data.tags span a:after,
-.data.tags span a:not([href*="=Favourite"]):not([href*="=Favorite"]):before {
+.data.tags span a:not([href*="=Loved%20it!"]):not([href*="=Enjoyed%20it1"]):before {
   position:absolute;
   z-index:5;
   display:block;
@@ -323,7 +323,7 @@ body[data-owner="1"] #fancybox-frame { filter: none; }
   white-space:pre-wrap;
   transform:translateY(-50%)
 }
-.data.tags span a:not([href*="=Favourite"]):not([href*="=Favorite"]):before
+.data.tags span a:not([href*="=Loved%20it!"]):not([href*="=Enjoyed%20it1"]):before
 {
   content:"";
   top:calc(50% - 5px);
@@ -337,7 +337,7 @@ body[data-owner="1"] #fancybox-frame { filter: none; }
   left:-210px;
   opacity:1
 }
-.data.tags span a:not([href*="=Favourite"]):not([href*="=Favorite"]):hover:before
+.data.tags span a:not([href*="=Loved%20it!"]):not([href*="=Enjoyed%20it!"]):hover:before
 {
   left:-10px;
   opacity:1
@@ -352,9 +352,9 @@ https://myanimelist.net/forum/?topicid=1723114
 .data.tags span a[href*="=Rewatched"]:after {
 	content: "I Have ReWatched This Anime."
 }
-/*  TAG - Favourite */    
-.anime .data.tags span a[href*="=Favourite"]:after {
-	content: "The Heart Icon Is To Show That This Is One Of My Favourite Anime's"
+/*  TAG - Loved it! */    
+.anime .data.tags span a[href*="=Loved%20it!"]:after {
+	content: "The Heart Icon Is To Show That I Really Really Enjoyed This Anime."
 }
 /*  TAG - Re Times */  
 .data.tags span a[href*="=x"]:after {
@@ -372,7 +372,7 @@ https://myanimelist.net/forum/?topicid=1723114
 .anime .data.tags span a[href*="=Worst%20Anime%20Ever!"]:after {
   content: "I wish I could Un-See everything I just saw :("
 }
-/*-----TAG - Seasons-----*/  
+/*-----TAG - Seasons-----*/   
 /* Winter 2021*/ 
 .data.tags span a[href*="=Winter%202021"]:after { content: "Animes I watched on a weekly basis in Winter 2021" }
 /* Spring 2021*/ 
