@@ -372,6 +372,10 @@ https://myanimelist.net/forum/?topicid=1723114
 .anime .data.tags span a[href*="=Worst%20Anime%20Ever!"]:after {
   content: "I wish I could Un-See everything I just saw :("
 }
+/*  TAG - Why Does This Exist?!? */  
+.anime .data.tags span a[href*="=Why%20Does%20This%20Exist?!?"]:after {
+  content: "This Anime Should Never Have Been Made!!!"
+}
 /*-----TAG - Seasons-----*/   
 /* Winter 2021*/ 
 .data.tags span a[href*="=Winter%202021"]:after { content: "Animes I watched on a weekly basis in Winter 2021" }
