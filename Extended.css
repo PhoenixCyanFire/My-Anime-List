@@ -559,7 +559,6 @@ body.ownlist .list-table .list-table-data .data.genre span a:hover,
 /*===============================*/
 
 body.ownlist .list-table .list-table-data .data.genre a{
-	color: #00fbffcc !important;
   line-height: 15px;
   font-size: 11px !important;
 }
