@@ -2,7 +2,7 @@ name: run Scrape_Score-and-Synopsis.py
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '2 4 * * *'
   workflow_dispatch:
 
 jobs:
