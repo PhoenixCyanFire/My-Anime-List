@@ -105,13 +105,13 @@ td.data.public-score a {
 \*------------------------------*/
 .list-table>tbody:first-of-type {
     position: relative;
-    top: 125px;
+    top: 10px;
     margin-top: -38px;
-    left: 95%;
+    left: 97%;
     display: inline-block;
     width: 35px;
     height: 25px;
-    background: 0 0!important;
+    background: 0 0 !important;
     z-index: 39;
 }
 .list-table>tbody:first-of-type:after {
@@ -639,39 +639,6 @@ td.data.mal_score {
 /* Data Type Mod */
 .data.type {
     top: -25px;
-}
-
-/* Premiered Season Mod */
-div.list-unit:not(.plantowatch) .data.season {
-    margin-left: -100px;
-    visibility: hidden;
-}
-div.list-unit.plantowatch  .data.season {
-  margin-left: -15px;
-}
-
-/* PTW & PTR Airing Dates Mod*/
-div.list-unit:not(.plantowatch):not(.plantoread) .data.airing-finished {
-    margin-left: -100px;
-    visibility: hidden;
-}
-div.list-unit:not(.plantowatch):not(.plantoread) .data.airing-started {
-    margin-left: -100px;
-    visibility: hidden;
-}
-
-div.list-unit.plantoread .data.started,
-div.list-unit.plantowatch .data.started {
-  visibility: hidden;
-  margin-left: -220px;
-}
-div.list-unit.plantoread .data.finished,
-div.list-unit.plantowatch .data.finished {
-  visibility: hidden;
-}
-div.list-unit.plantoread .data.days,
-div.list-unit.plantowatch .data.days {
-  visibility: hidden;
 }
 
 /* Expand title on Hover*/
