@@ -373,7 +373,7 @@ https://myanimelist.net/forum/?topicid=1723114
   content: "I wish I could Un-See everything I just saw :("
 }
 /*  TAG - Why Does This Exist?!? */  
-.anime .data.tags span a[href*="=Why%20Does%20This%20Exist?!?"]:after {
+.anime .data.tags span a[href*="=Why%20Does%20This%20Exist%3F!%3f"]:after {
   content: "This Anime Should Never Have Been Made!!!"
 }
 /*-----TAG - Seasons-----*/   
